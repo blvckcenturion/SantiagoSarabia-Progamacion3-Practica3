@@ -1,0 +1,19 @@
+﻿<Window x:Class="classProgram1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:classProgram1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" Text="Libreria" VerticalAlignment="Top" Height="41" Width="200" FontSize="30" TextAlignment="Center" Foreground="#FF00D4CF"/>
+        <TextBox x:Name="numTxt" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,101,0,0" TextWrapping="Wrap" Text="Numero de telefono" VerticalAlignment="Top" Height="30" Width="200" FontSize="20" TextAlignment="Center" Foreground="#FF00D4CF"/>
+        <Button x:Name="enterCallBtn" Content="Ingresar llamada" HorizontalAlignment="Left" Margin="538,101,0,0" VerticalAlignment="Top" Width="200" Height="30
+                " Background="#FF00D4CF" Click="enterCallBtn_Click"/>
+        <DataGrid x:Name="pendingGrid" Margin="143,177,162,134"/>
+        <Button x:Name="receiveCallBtn" Content="Atender llamada" HorizontalAlignment="Left" Margin="62,589,0,0" VerticalAlignment="Top" Width="268" Height="53" Background="#FF00D4CF" Click="receiveCallBtn_Click"/>
+        <Button x:Name="viewCallsBtn" Content="Ver llamadas finalizadas" HorizontalAlignment="Left" Margin="470,589,0,0" VerticalAlignment="Top" Width="268" Height="53" Background="#FF00D4CF" Click="viewCallsBtn_Click"/>
+    </Grid>
+</Window>
